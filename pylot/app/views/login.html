@@ -1,0 +1,63 @@
+<html>
+  <head>
+	  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="login_styles.css" type="text/css">
+  </head>
+  <script>
+     $(document).ready(function () {
+        $('.forgot-pass').click(function(event) {
+          $(".pr-wrap").toggleClass("show-pass-reset");
+        }); 
+        
+        $('.pass-reset-submit').click(function(event) {
+          $(".pr-wrap").removeClass("show-pass-reset");
+        }); 
+    });
+  </script>
+  <body>
+    <div class="container"> 
+      <h1>The Givr</h1>
+        <p id="info">
+          Do you have a homeless friend or just met someone awesome asking for help? Let the community know!!! If everyone gives a little something extra, it can change lives.
+          Join the community to post stories, photos and temporary locations of your friend in the neighborhood. Friends can stop by and offer food, supplies and a helping hand.
+        </p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                  <div class="wrap text-center">
+                      <p class="form-title text-center">
+                          Sign In</p>
+                      <form class="login">
+                        <input type="text" placeholder="Username" id="username"/>
+                        <input type="text" placeholder="Email" id="email"/>
+                        <input type="submit" value="Sign Up" class="btn btn-success btn-sm" />
+                      <div class="wrap"><br><br>
+                      </form>
+                        <p class="form-title">
+                          Sign Up</p>
+                        <form class="register">
+                        <input type="text" placeholder="First Name" id="first_name"/>
+                        <input type="text" placeholder="Last Name" id="last_name"/>
+                        <input type="text" placeholder="Username" id="username"/>
+                        <input type="text" placeholder="Email" id="email"/>
+                        <input type="text" placeholder="Phone" id="phone"/>
+                        <input type="password" placeholder="Password" id="password"/>
+                        <input type="password" placeholder="Confirm Password" />
+                        <input type="submit" value="Sign Up" class="btn btn-success btn-sm" />
+                        </form>
+                  </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+  </body>
+</html>
+

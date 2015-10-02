@@ -49,7 +49,7 @@ class Requests(Controller):
             'intersection':request.form['intersection'],
             'user_id':session['id']
         }
-        print item
+        # print item
         self.models['Request'].create_request(item)
         return redirect ('/')
 

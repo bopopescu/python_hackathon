@@ -21,32 +21,6 @@ class Users(Controller):
         # self.load_model('Friendship')
 
     """ This is an example of a controller method that will load a view for the client """
-    # def index(self): #new 
-    #     """ 
-    #     A loaded model is accessible through the models attribute 
-    #     self.models['WelcomeModel'].get_all_users()
-    #     """
-
-    #     return self.load_view('index.html')
-    # def home(self, id):
-
-    #     if 'id' in session and str(session ['id']) == str(id):
-    #         user_info = self.models['User'].user_info_by_id(id)
-    #         all_users = self.models['User'].show_all_users()
-    #         # print all_users
-    #         friends = self.models['Friendship'].friends(session['id'])
-    #         not_friend =self.models['Friendship'].not_friends(session['id'])
-    #         for list in not_friend:
-    #             print list['id']
-    #         return self.load_view('home.html',user_info = user_info, all_users=all_users, friends=friends, not_friend=not_friend)
-    #     return redirect('/')
-
-    # def show(self, id):
-    #     profile = self.models['User'].user_info_by_id(id)
-    #     print session['id']
-    #     return self.load_view('show.html',info=profile)
-
-
 
 
     def create(self):
